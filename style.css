@@ -1,0 +1,283 @@
+html{height:100%;}
+/* TAGs */
+
+#Shadow{
+  width:100%;
+  height:100%;
+  position:fixed;
+  box-shadow: 0 0 100px #000 inset;
+  z-index:-999;
+}
+/*      DESKTOP                                            */
+@media screen and (min-width: 1200px) {
+	#desktop_1 {
+		background-color: #900;
+		color: #fff;
+	}
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) and (min-device-width: 1024px) {
+	#desktop_2 {
+		background-color: #900;
+		color: #fff;
+	}
+}
+@media screen and (max-width: 800px) and (min-device-width: 1024px){
+	#desktop_3 {
+		background-color: #900;
+		color: #fff;
+	}
+}
+/***********************************************************/
+/*      IPAD                                               */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+	#ipad_1 {
+		background-color: #900;
+		color: #fff;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+	#ipad_2 {
+		background-color: #900;
+		color: #fff;
+	}
+}
+
+/***********************************************************/
+/*      IPHONE                                             */
+
+@media screen and (max-width: 568px) and (orientation: landscape){
+	#iphone_1 {
+		background-color: #990;
+		color: #fff;
+	}
+	.myDisplay{
+		font-size: smaller;
+	}
+}
+@media screen and (max-width: 480px) and (orientation: landscape){
+	#iphone_1 {
+		background-color: #900;
+		color: #fff;
+	}
+	.myDisplay{
+		font-size: smaller;
+	}
+}
+@media screen and (max-width: 480px) and (orientation: portrait){
+	#iphone_2 {
+		background-color: #900;
+		color: #fff;
+	}
+	.myDisplay{
+		font-size: larger;
+	}
+}
+/***********************************************************/
+/*      PRINT                                              */
+@media only print {
+  body {
+	width: 100%;
+	background-color: #FFF;
+	font-family: Georgia, serif;
+	font-size: 36px;
+	color: #000;
+
+  }
+}
+/***********************************************************/
+/*     REGLES COMMUNES                                     */
+body @font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('webfontkit/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('webfontkit/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.myDisplay {
+	height: auto;
+	width: 90%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	border: thin solid #333;
+	padding: 10px;
+	background-color: #FFF;
+	color: #666;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.33) 0px 3px 6px 0px;
+}
+
+body{
+  height: 100%;
+  margin:0;
+  background: url(images/jl-p.png);
+	background-repeat:no-repeat;
+  background-position: 20px,0px, 0px;
+
+
+	width: 100%;
+	margin: 0;
+	font-family:verdana;
+
+
+
+	margin: 0; /* permet de caler le contenu de la page contre les bords de la fenêtre */
+
+	min-height: 100vh; /* permet de forcer la hauteur du body à la hauteur de la fenêtre */
+}
+
+/* IDs */
+#header{
+width:100%;
+height:160px;
+background:  url(images/logo.png), url(images/nom3.png);
+background-repeat: no-repeat;
+background-position:30px, 920px, 0px;
+/*background-color: rgba(105, 0, 0, 0.3);*/
+padding:5px;
+text-align:center;
+margin-left:auto;
+padding-bottom:0;
+
+}
+
+#menu{
+  width:100%;
+  height:50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  /*background-color:rgb(255, 153, 51);*/
+  margin-bottom:10px;
+	padding-bottom:0;
+
+
+  /*float:left;*/
+}
+
+#menu2{
+  width:250px;
+  height:100%;
+  float: left;
+
+  margin-top:-10px;
+	margin-bottom:40px;
+  margin-left: -50px;
+	padding-bottom:0;
+  /*float:left;*/
+}
+
+#texte{
+	width:650px; /* 760 + 20 + 20 = 800 */
+	height:auto; /* hauteur s'adapte au contenu */
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	margin-left:auto;
+}
+
+#footer{
+	width:1024px;
+	height:30px;
+	margin-top:20px;
+	padding:20px;
+	text-align:center;
+	top: 200px;
+	left: 0;
+}
+
+#affiches{
+  width:760px; /* 760 + 20 + 20 = 800 */
+  height:auto; /* hauteur s'adapte au contenu */
+
+}
+
+#wrapper{width:800px;margin:auto;position:relative;}
+
+#twitter{
+	width:50px;
+	height:50px;
+  background: url(images/twt.png);
+	position:fixed;
+	left: 240px;
+  bottom: 0;
+}
+#fb{
+	width:50px;
+	height:50px;
+  background: url(images/fbook.png);
+	position:fixed;
+  left: 315px;
+  bottom: 0;
+}
+
+#gmail{
+	width:50px;
+	height:50px;
+  background: url(images/gml.png);
+	position:fixed;
+  left: 390px;
+  bottom: 0;
+
+}
+#youtube{
+	width:50px;
+	height:50px;
+  background: url(images/ytb.png);
+	position:fixed;
+  left: 465px;
+  bottom: 0;
+
+}
+
+/* CLASSEs */
+.toto{
+	margin-left: auto;
+	margin-right: auto;
+	background-color:rgba(255,255,150,0);
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin:0;
+/* padding: 10px; */
+
+
+}
+nav li {
+    float: left;
+border-right: 1px solid #000;
+}
+
+nav li a {
+width: 220px;
+height:30px;
+    display: block;
+    color: white;
+    text-align: center;
+padding: 10px;
+    text-decoration: none;
+}
+
+nav a{
+font-size: 20px;
+}
+
+nav a:link{
+color:#000;
+}
+
+nav a:visited{
+color:#000;
+}
+
+nav a:hover{
+background:#000;color:#fff;
+padding: 3px;
+}
+
+nav a:active{
+background:#4d4a49;
+}
