@@ -9,7 +9,7 @@ html{height:100%;}
   z-index:-999;
 }
 /*      DESKTOP                                            */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1200px) and (min-device-width: 1024px){
 	#desktop_1 {
 		background-color: #900;
 		color: #fff;
