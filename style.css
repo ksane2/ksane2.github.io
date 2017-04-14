@@ -156,18 +156,6 @@ padding-bottom:0;
   /*float:left;*/
 }
 
-#menu2{
-  width:250px;
-  height:100%;
-  float: left;
-
-  margin-top:-10px;
-	margin-bottom:40px;
-  margin-left: -50px;
-	padding-bottom:0;
-  /*float:left;*/
-}
-
 #texte{
 	width:650px; /* 760 + 20 + 20 = 800 */
 	height:auto; /* hauteur s'adapte au contenu */
